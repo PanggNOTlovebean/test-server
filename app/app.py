@@ -13,7 +13,7 @@ def index():
         return render_template('error.html')
 
 @app.route('/login', methods=['POST'])
-def login(request):
+def login():
     username = request.form['username']
     password = request.form['password']
     print(username)
