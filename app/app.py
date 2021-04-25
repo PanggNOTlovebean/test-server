@@ -16,7 +16,7 @@ def index():
 def login():
     username = request.form['username']
     password = request.form['password']
-    if(username=='admin' and password=='123456'):
+    if(username=='admin' and password=='111111'):
         return jsonify({'message':'login success'}), 200
     else:
         return jsonify({'message':'login fail'}), 200
